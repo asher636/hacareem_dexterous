@@ -10,15 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var segmentControl: RoundSegmentControl!
+    @IBOutlet weak var checkImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        checkImage.setRounded()
+        let attr = NSDictionary(object: UIFont(name: "HelveticaNeue-Bold", size: 17.0)!, forKey: NSFontAttributeName as NSCopying)
+        segmentControl.setTitleTextAttributes(attr as! [AnyHashable : Any], for: .normal)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
 
 
 }
