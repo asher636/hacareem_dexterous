@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Initial View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="InitialViewController" customModule="HaCareem_Dexterous" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="51F-YV-0kt">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Od-P4-REv" customClass="MRCountryPicker" customModule="MRCountryPicker">
+                                <rect key="frame" x="0.0" y="467" width="375" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="7Si-ZM-rWL"/>
+                                </constraints>
+                            </pickerView>
+                            <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lkt-6v-nM8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.16078431372549018" green="0.63921568627450975" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-careem" translatesAutoresizingMaskIntoConstraints="NO" id="Rdi-Wb-lHH">
+                                <rect key="frame" x="27.5" y="30" width="320" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="8WS-me-McI"/>
+                                    <constraint firstAttribute="height" constant="128" id="Pxp-LP-MGQ"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="EO2-38-Zmc">
+                                <rect key="frame" x="47.5" y="200" width="280" height="40"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="+92" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KFC-qz-R1G" customClass="RoundTextField" customModule="HaCareem_Dexterous" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="68.5" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="68.5" id="zAw-C7-ue5"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="334 3887816" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bQz-vE-2Nh" customClass="RoundTextField" customModule="HaCareem_Dexterous" customModuleProvider="target">
+                                        <rect key="frame" x="78.5" y="0.0" width="151.5" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="COI-vQ-W6A"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkicon" translatesAutoresizingMaskIntoConstraints="NO" id="tra-dq-8Hc">
+                                        <rect key="frame" x="240" y="0.0" width="40" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="OZP-18-ITQ"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="7i5-hE-w9H" appends="YES" id="eP3-M8-zVX"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="9Vh-1K-OSt"/>
+                                    <constraint firstAttribute="width" constant="280" id="vv6-yT-t5w"/>
+                                </constraints>
+                            </stackView>
+                            <textField opaque="NO" clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter Pin" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pKz-fv-0l7" customClass="RoundTextField" customModule="HaCareem_Dexterous" customModuleProvider="target">
+                                <rect key="frame" x="47.5" y="200" width="280" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ANE-cj-axc"/>
+                                    <constraint firstAttribute="width" constant="280" id="gvL-Fm-qQO"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="height">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="uz3-O1-bMN" customClass="RoundSegmentControl" customModule="HaCareem_Dexterous" customModuleProvider="target">
+                                <rect key="frame" x="47.5" y="260" width="280" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="h5I-ez-K0l"/>
+                                    <constraint firstAttribute="height" constant="40" id="iDk-5w-oKy"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Go"/>
+                                    <segment title="Go+"/>
+                                    <segment title="Business"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="height">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="categoryChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="fxC-8Z-48B"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estimated Time: 2 mins" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1IH-QY-Vyc">
+                                <rect key="frame" x="48" y="310" width="280" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="sw2-KU-OhI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" placeholder="Pickup Location" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WS2-SA-2rL" customClass="RoundTextField" customModule="HaCareem_Dexterous" customModuleProvider="target">
+                                <rect key="frame" x="47.5" y="336" width="280" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="QAf-wJ-dzk"/>
+                                    <constraint firstAttribute="width" constant="280" id="tNc-TN-Nul"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="height">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" placeholder="Dropoff Location" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EIM-39-xRr" customClass="RoundTextField" customModule="HaCareem_Dexterous" customModuleProvider="target">
+                                <rect key="frame" x="47.5" y="399" width="280" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="lfa-rD-81d"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="height">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDO-U0-iTe" customClass="RoundedButton" customModule="HaCareem_Dexterous" customModuleProvider="target">
+                                <rect key="frame" x="47" y="547" width="280" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="nq2-i6-VDO"/>
+                                    <constraint firstAttribute="height" constant="40" id="tPb-c3-EwP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="cancelBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LR8-mS-H2V"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hi-XM-Tot" customClass="RoundedButton" customModule="HaCareem_Dexterous" customModuleProvider="target">
+                                <rect key="frame" x="47" y="597" width="280" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="3GJ-X1-UFa"/>
+                                    <constraint firstAttribute="height" constant="40" id="rkO-HB-HPq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Ride Now">
+                                    <color key="titleColor" red="0.1803921568627451" green="0.55686274509803924" blue="0.41568627450980389" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="8hi-XM-Tot" firstAttribute="top" secondItem="jDO-U0-iTe" secondAttribute="bottom" constant="10" id="0so-jU-3mi"/>
+                            <constraint firstItem="51F-YV-0kt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="AaC-ka-9Vb"/>
+                            <constraint firstAttribute="trailing" secondItem="lkt-6v-nM8" secondAttribute="trailing" id="BAm-2C-xIB"/>
+                            <constraint firstItem="WS2-SA-2rL" firstAttribute="top" secondItem="1IH-QY-Vyc" secondAttribute="bottom" constant="8" id="ESx-kL-kR1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="51F-YV-0kt" secondAttribute="bottom" id="Evf-BP-Wp0"/>
+                            <constraint firstItem="lkt-6v-nM8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Gno-Lb-1fn"/>
+                            <constraint firstItem="EIM-39-xRr" firstAttribute="top" secondItem="WS2-SA-2rL" secondAttribute="bottom" constant="23" id="MLo-Yp-Tl9"/>
+                            <constraint firstAttribute="trailing" secondItem="7Od-P4-REv" secondAttribute="trailing" id="Nh6-dD-EBD"/>
+                            <constraint firstItem="Rdi-Wb-lHH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="OKt-cB-fVt"/>
+                            <constraint firstItem="jDO-U0-iTe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SVS-3i-Mph"/>
+                            <constraint firstItem="pKz-fv-0l7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VHl-0Q-GLv"/>
+                            <constraint firstItem="EIM-39-xRr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="31.5" id="ZEj-fU-gki"/>
+                            <constraint firstAttribute="bottom" secondItem="7Od-P4-REv" secondAttribute="bottom" id="ZM5-3g-9TO"/>
+                            <constraint firstItem="lkt-6v-nM8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="b7r-H3-PvY"/>
+                            <constraint firstItem="1IH-QY-Vyc" firstAttribute="top" secondItem="uz3-O1-bMN" secondAttribute="bottom" constant="10" id="b8b-28-qwL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EIM-39-xRr" secondAttribute="trailing" constant="31.5" id="d2G-ai-RTn"/>
+                            <constraint firstItem="WS2-SA-2rL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eFq-RF-rop"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8hi-XM-Tot" secondAttribute="bottom" constant="30" id="gCv-Pr-krF"/>
+                            <constraint firstItem="7Od-P4-REv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gub-AA-RDZ"/>
+                            <constraint firstItem="uz3-O1-bMN" firstAttribute="top" secondItem="EO2-38-Zmc" secondAttribute="bottom" constant="20" id="hLd-p4-1gk"/>
+                            <constraint firstItem="pKz-fv-0l7" firstAttribute="top" secondItem="Rdi-Wb-lHH" secondAttribute="bottom" constant="42" id="jLC-5M-Oeh"/>
+                            <constraint firstItem="uz3-O1-bMN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="maq-UZ-HPE"/>
+                            <constraint firstAttribute="trailing" secondItem="51F-YV-0kt" secondAttribute="trailing" id="wBI-Ch-uCw"/>
+                            <constraint firstItem="1IH-QY-Vyc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wXv-Ew-KfP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lkt-6v-nM8" secondAttribute="bottom" id="wb3-PB-Hur"/>
+                            <constraint firstItem="51F-YV-0kt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wrm-n4-EIG"/>
+                            <constraint firstItem="EO2-38-Zmc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yHC-tR-oen"/>
+                            <constraint firstItem="8hi-XM-Tot" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yMb-FY-5zS"/>
+                            <constraint firstItem="EO2-38-Zmc" firstAttribute="top" secondItem="Rdi-Wb-lHH" secondAttribute="bottom" constant="42" id="ywA-7u-Ncn"/>
+                            <constraint firstItem="Rdi-Wb-lHH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z4z-bu-pY2"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="PCq-P9-Fc8" appends="YES" id="Yl9-5I-sik"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="jDO-U0-iTe" id="PPN-PV-rta"/>
+                        <outlet property="categoryOption" destination="uz3-O1-bMN" id="kwE-MS-afJ"/>
+                        <outlet property="checkImage" destination="tra-dq-8Hc" id="4Lt-XP-tbJ"/>
+                        <outlet property="countryCode" destination="KFC-qz-R1G" id="gHB-ZZ-Oee"/>
+                        <outlet property="countryPicker" destination="7Od-P4-REv" id="qwK-tc-u1P"/>
+                        <outlet property="dropoffLocation" destination="EIM-39-xRr" id="UQ9-Fw-4AX"/>
+                        <outlet property="estimatedTimeArrival" destination="1IH-QY-Vyc" id="c7r-GI-fd9"/>
+                        <outlet property="numberStack" destination="EO2-38-Zmc" id="0fC-T7-xh1"/>
+                        <outlet property="phoneNumber" destination="bQz-vE-2Nh" id="xDU-gV-aV5"/>
+                        <outlet property="pickupLocation" destination="WS2-SA-2rL" id="fYS-gK-Tn2"/>
+                        <outlet property="pinTextField" destination="pKz-fv-0l7" id="H23-Fv-lgj"/>
+                        <outlet property="segmentControl" destination="uz3-O1-bMN" id="0w4-JA-0Iv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="7i5-hE-w9H">
+                    <connections>
+                        <action selector="verifyPressed:" destination="BYZ-38-t0r" id="DH2-1C-gAw"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="PCq-P9-Fc8">
+                    <connections>
+                        <action selector="tapPressed:" destination="BYZ-38-t0r" id="Caj-Pg-zUP"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lmA-Oi-eKl">
+            <objects>
+                <viewController id="g8f-bX-c46" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3cT-6A-j1F"/>
+                        <viewControllerLayoutGuide type="bottom" id="nqx-Te-bT4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fid-fl-LWe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="atz-Gw-jhA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="867" y="138"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="800" height="800"/>
+        <image name="checkicon" width="16" height="13"/>
+        <image name="logo-careem" width="2499" height="512"/>
+    </resources>
+</document>

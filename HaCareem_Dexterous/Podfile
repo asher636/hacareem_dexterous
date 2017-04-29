@@ -6,9 +6,13 @@ target 'HaCareem_Dexterous' do
   use_frameworks!
 
   # Pods for HaCareem_Dexterous
-	pod 'GoogleMaps'
-	pod 'Alamofire', '~> 4.4'
-	pod 'SwiftyJSON'
-	pod 'Kingfisher', '~> 3.0'
-	pod 'IQKeyboardManagerSwift'
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'GoogleMaps'
+  pod 'GooglePlaces' 
+  pod 'Alamofire', '~> 4.4'
+  pod 'SwiftyJSON'
+  pod 'Kingfisher', '~> 3.0'
+  pod 'IQKeyboardManagerSwift'
+  pod 'MRCountryPicker', '~> 0.0.6'
 end

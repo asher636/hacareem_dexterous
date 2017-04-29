@@ -9,12 +9,27 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>GoogleToolboxForMac.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>IQKeyboardManagerSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Kingfisher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MRCountryPicker-SwiftCountryPicker.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MRCountryPicker.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,12 +47,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0A8096DA5786F44908243F3FEA764252</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>126E1D89E426BA7AB208BA48CCD181C2</key>
+		<key>00103D6C821BE85971C563025527BA5D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,7 +57,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>4F0837541784AB173CB811F2D4D93865</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>72AC4615AB0A59183BDC2B52164EB0B5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>881FEBC51E8D63532F1E3810D713DB1B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A7C206C042D404F93B93041BC6094351</key>
 		<dict>
 			<key>primary</key>
 			<true/>
