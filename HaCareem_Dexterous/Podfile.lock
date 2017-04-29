@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (4.4.0)
+  - GoogleMaps (2.2.0):
+    - GoogleMaps/Maps (= 2.2.0)
+  - GoogleMaps/Base (2.2.0)
+  - GoogleMaps/Maps (2.2.0):
+    - GoogleMaps/Base
+  - IQKeyboardManagerSwift (4.0.9)
+  - Kingfisher (3.6.2)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.4)
+  - GoogleMaps
+  - IQKeyboardManagerSwift
+  - Kingfisher (~> 3.0)
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  GoogleMaps: 104c418d61ab8a05dff06ed0784c25ea9d37da45
+  IQKeyboardManagerSwift: 2eefe6c429b86aa08bfbc1b5c891164d754adf91
+  Kingfisher: 2c94e72c6830622c71d06adf4ea024c37d316830
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: 58db8dc1cd26f2bd7d6185f10502ba2d6eed7ab2
+
+COCOAPODS: 1.2.1
